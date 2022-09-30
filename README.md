@@ -1,2 +1,1 @@
-# Origamilo
-Origami folding app
+# Smartcard
