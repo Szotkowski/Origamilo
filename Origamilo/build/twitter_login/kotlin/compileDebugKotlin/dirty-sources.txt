@@ -1,0 +1,1 @@
+C:\Users\MichaelSzotkowski\Downloads\flutter_windows_3.3.2-stable\flutter\.pub-cache\hosted\pub.dartlang.org\twitter_login-4.0.1\android\src\main\kotlin\com\maru\twitter_login\TwitterLoginPlugin.kt

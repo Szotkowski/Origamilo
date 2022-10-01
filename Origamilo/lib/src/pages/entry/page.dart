@@ -1,16 +1,8 @@
 import 'package:flutter/material.dart';
-
-/*import 'package:myapp/auth/auth_state.dart';*/
-import 'package:auth_buttons/auth_buttons.dart';
-
-import 'package:intl/intl.dart';
-import 'package:collection/collection.dart';
+import 'package:auth_buttons/auth_buttons.dart'
+    show FacebookAuthButton, GoogleAuthButton;
 import '/src/pages/index.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:url_launcher/url_launcher.dart';
-import 'package:map/map.dart';
-import 'package:latlng/latlng.dart';
-import 'package:paged_vertical_calendar/paged_vertical_calendar.dart';
+import 'package:google_fonts/google_fonts.dart' show GoogleFonts;
 
 class PageEntry extends StatefulWidget {
   const PageEntry({
@@ -56,8 +48,8 @@ class _State extends State<PageEntry> {
           ),
           child: Text(r'''Smartcard''',
               style: GoogleFonts.poppins(
-                textStyle: TextStyle(
-                  color: const Color(0xFFFFFFFF),
+                textStyle: const TextStyle(
+                  color: Color(0xFFFFFFFF),
                   fontWeight: FontWeight.w400,
                   fontSize: 50,
                   fontStyle: FontStyle.normal,
@@ -113,8 +105,8 @@ class _State extends State<PageEntry> {
                   ),
                   Text(r'''''',
                       style: GoogleFonts.poppins(
-                        textStyle: TextStyle(
-                          color: const Color(0xFFFFFFFF),
+                        textStyle: const TextStyle(
+                          color: Color(0xFFFFFFFF),
                           fontWeight: FontWeight.w400,
                           fontSize: 10,
                           fontStyle: FontStyle.normal,
@@ -137,8 +129,8 @@ class _State extends State<PageEntry> {
                   ),
                   Text(r'''''',
                       style: GoogleFonts.poppins(
-                        textStyle: TextStyle(
-                          color: const Color(0xFFFFFFFF),
+                        textStyle: const TextStyle(
+                          color: Color(0xFFFFFFFF),
                           fontWeight: FontWeight.w400,
                           fontSize: 10,
                           fontStyle: FontStyle.normal,
@@ -159,15 +151,15 @@ class _State extends State<PageEntry> {
                         await Navigator.push<void>(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => PageHome(),
+                            builder: (context) => const PageHome(),
                           ),
                         );
                       },
                       child: Container(
                         width: double.maxFinite,
                         height: 42,
-                        decoration: BoxDecoration(
-                          color: const Color(0xFF1B75A7),
+                        decoration: const BoxDecoration(
+                          color: Color(0xFF1B75A7),
                           borderRadius: BorderRadius.only(
                             topLeft: Radius.circular(10),
                             topRight: Radius.circular(10),
@@ -179,8 +171,8 @@ class _State extends State<PageEntry> {
                         child: Text(
                           'přihlásit později',
                           style: GoogleFonts.poppins(
-                            textStyle: TextStyle(
-                              color: const Color(0xFFFFFFFF),
+                            textStyle: const TextStyle(
+                              color: Color(0xFFFFFFFF),
                               fontWeight: FontWeight.w400,
                               fontSize: 25,
                               fontStyle: FontStyle.normal,
@@ -194,8 +186,8 @@ class _State extends State<PageEntry> {
                   ),
                   Text(r'''''',
                       style: GoogleFonts.poppins(
-                        textStyle: TextStyle(
-                          color: const Color(0xFFFFFFFF),
+                        textStyle: const TextStyle(
+                          color: Color(0xFFFFFFFF),
                           fontWeight: FontWeight.w400,
                           fontSize: 50,
                           fontStyle: FontStyle.normal,
