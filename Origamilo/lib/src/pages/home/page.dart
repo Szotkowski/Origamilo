@@ -1,16 +1,6 @@
 import 'package:flutter/material.dart';
 
-/*import 'package:myapp/auth/auth_state.dart';*/
-
-import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
-import 'package:intl/intl.dart';
-import 'package:collection/collection.dart';
-import '/src/pages/index.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:url_launcher/url_launcher.dart';
-import 'package:map/map.dart';
-import 'package:latlng/latlng.dart';
-import 'package:paged_vertical_calendar/paged_vertical_calendar.dart';
 import 'package:tcard/tcard.dart';
 
 class PageHome extends StatefulWidget {
@@ -52,8 +42,8 @@ class _State extends State<PageHome> {
                 children: [
                   Text(r'''''',
                       style: GoogleFonts.poppins(
-                        textStyle: TextStyle(
-                          color: const Color(0xFFFFFFFF),
+                        textStyle: const TextStyle(
+                          color: Color(0xFFFFFFFF),
                           fontWeight: FontWeight.w400,
                           fontSize: 20,
                           fontStyle: FontStyle.normal,
@@ -64,8 +54,8 @@ class _State extends State<PageHome> {
                       maxLines: 1),
                   Text(r'''''',
                       style: GoogleFonts.poppins(
-                        textStyle: TextStyle(
-                          color: const Color(0xFFFFFFFF),
+                        textStyle: const TextStyle(
+                          color: Color(0xFFFFFFFF),
                           fontWeight: FontWeight.w400,
                           fontSize: 20,
                           fontStyle: FontStyle.normal,
@@ -88,8 +78,8 @@ class _State extends State<PageHome> {
                           ),
                           child: Text(r'''Smartcard''',
                               style: GoogleFonts.poppins(
-                                textStyle: TextStyle(
-                                  color: const Color(0xFFFFFFFF),
+                                textStyle: const TextStyle(
+                                  color: Color(0xFFFFFFFF),
                                   fontWeight: FontWeight.w400,
                                   fontSize: 30,
                                   fontStyle: FontStyle.normal,
@@ -107,7 +97,7 @@ class _State extends State<PageHome> {
                             bottom: 5,
                           ),
                           child: Image.asset(
-                            r'''assets/hlava.png''',
+                            r'''/hlava.png''',
                             height:
                                 MediaQuery.of(context).size.height * (5 / 100),
                             fit: BoxFit.contain,
@@ -126,8 +116,8 @@ class _State extends State<PageHome> {
                     padding: EdgeInsets.zero,
                     width: double.maxFinite,
                     height: MediaQuery.of(context).size.height * (65 / 100),
-                    decoration: BoxDecoration(
-                      color: const Color(0xFFFFFFFF),
+                    decoration: const BoxDecoration(
+                      color: Color(0xFFFFFFFF),
                       borderRadius: BorderRadius.only(
                         topLeft: Radius.circular(30),
                         topRight: Radius.circular(30),
@@ -147,8 +137,8 @@ class _State extends State<PageHome> {
                       children: [
                         Text(r'''''',
                             style: GoogleFonts.poppins(
-                              textStyle: TextStyle(
-                                color: const Color(0xFFFFFFFF),
+                              textStyle: const TextStyle(
+                                color: Color(0xFFFFFFFF),
                                 fontWeight: FontWeight.w400,
                                 fontSize: 20,
                                 fontStyle: FontStyle.normal,
@@ -160,12 +150,7 @@ class _State extends State<PageHome> {
                         TCard(
                           onForward: (index, info) {
                             if (info.direction == SwipDirection.Right) {
-                              //like
-
-                            } else {
-                              //dislike
-
-                            }
+                            } else {}
                           },
                           onEnd: () {},
                           lockYAxis: true,
@@ -175,14 +160,14 @@ class _State extends State<PageHome> {
                             Align(
                               alignment: Alignment.center,
                               child: ClipRRect(
-                                borderRadius: BorderRadius.only(
+                                borderRadius: const BorderRadius.only(
                                   topLeft: Radius.circular(40),
                                   topRight: Radius.circular(40),
                                   bottomRight: Radius.circular(40),
                                   bottomLeft: Radius.circular(40),
                                 ),
                                 child: Image.asset(
-                                  r'''assets/krabice.jpg''',
+                                  r'''/krabice.jpg''',
                                   width: MediaQuery.of(context).size.width *
                                       (100 / 100),
                                   height: MediaQuery.of(context).size.height *
@@ -194,7 +179,7 @@ class _State extends State<PageHome> {
                             Align(
                               alignment: Alignment.center,
                               child: Image.asset(
-                                "assets/Smartcard.png",
+                                "/Smartcard.png",
                                 width: MediaQuery.of(context).size.width *
                                     (100 / 100),
                                 fit: BoxFit.cover,
@@ -203,7 +188,7 @@ class _State extends State<PageHome> {
                             Align(
                               alignment: Alignment.center,
                               child: Image.asset(
-                                "assets/Smartcard.png",
+                                "/Smartcard.png",
                                 height: double.maxFinite,
                                 fit: BoxFit.cover,
                               ),
@@ -211,11 +196,11 @@ class _State extends State<PageHome> {
                           ],
                         ),
                         Align(
-                          alignment:  Alignment.topCenter,
+                          alignment: Alignment.topCenter,
                           child: Text(r'''''',
                               style: GoogleFonts.poppins(
-                                textStyle: TextStyle(
-                                  color: const Color(0xFF000000),
+                                textStyle: const TextStyle(
+                                  color: Color(0xFF000000),
                                   fontWeight: FontWeight.w400,
                                   fontSize: 20,
                                   fontStyle: FontStyle.normal,
@@ -255,8 +240,8 @@ class _State extends State<PageHome> {
                               child: Container(
                                 height: MediaQuery.of(context).size.height *
                                     (5 / 100),
-                                decoration: BoxDecoration(
-                                  color: const Color(0xFF35B7BC),
+                                decoration: const BoxDecoration(
+                                  color: Color(0xFF35B7BC),
                                   borderRadius: BorderRadius.only(
                                     topLeft: Radius.circular(20),
                                     topRight: Radius.circular(20),
@@ -268,8 +253,8 @@ class _State extends State<PageHome> {
                                 child: Text(
                                   'Produkt',
                                   style: GoogleFonts.poppins(
-                                    textStyle: TextStyle(
-                                      color: const Color(0xFFFFFFFF),
+                                    textStyle: const TextStyle(
+                                      color: Color(0xFFFFFFFF),
                                       fontWeight: FontWeight.w400,
                                       fontSize: 25,
                                       fontStyle: FontStyle.normal,
@@ -284,8 +269,8 @@ class _State extends State<PageHome> {
                         ),
                         Text(r'''''',
                             style: GoogleFonts.poppins(
-                              textStyle: TextStyle(
-                                color: const Color(0xFFFFFFFF),
+                              textStyle: const TextStyle(
+                                color: Color(0xFFFFFFFF),
                                 fontWeight: FontWeight.w400,
                                 fontSize: 16,
                                 fontStyle: FontStyle.normal,
